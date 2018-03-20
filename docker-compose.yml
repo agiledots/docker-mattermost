@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mattermost:
+    image: mattermost/mattermost-preview
+    ports:
+      - 8065:8065
+
+  node-red:
+#    image: nodered/node-red-docker
+    build: node-red
+#    volumes:
+#      - ~/.node-red:/data
+    ports:
+      - 1880:1880
+
+~
